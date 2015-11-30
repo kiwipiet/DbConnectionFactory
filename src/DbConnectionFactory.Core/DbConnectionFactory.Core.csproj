@@ -7,7 +7,7 @@
     <ProjectGuid>{640E8454-9CBA-40FE-823E-6ADDE44C6C3A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DbConnectionFactory.Core</RootNamespace>
+    <RootNamespace>DbConnectionFactory</RootNamespace>
     <AssemblyName>DbConnectionFactory.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

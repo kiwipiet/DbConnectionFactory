@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 
-namespace DbConnectionFactory.Core
+namespace DbConnectionFactory
 {
     public interface IDatabaseConnection : IDisposable
     {

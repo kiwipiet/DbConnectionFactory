@@ -7,7 +7,7 @@
     <ProjectGuid>{D31522CB-E552-4F31-A1EC-EF985BA39908}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DbConnectionFactory.SqlServer</RootNamespace>
+    <RootNamespace>DbConnectionFactory</RootNamespace>
     <AssemblyName>DbConnectionFactory.SqlServer</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

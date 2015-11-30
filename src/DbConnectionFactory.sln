@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConnectionFactory.Core", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConnectionFactory.SqlServer", "DbConnectionFactory.SqlServer\DbConnectionFactory.SqlServer.csproj", "{D31522CB-E552-4F31-A1EC-EF985BA39908}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConnectionFactory.Dapper", "DbConnectionFactory.Dapper\DbConnectionFactory.Dapper.csproj", "{D3CDCD4B-A334-4D6D-ACBA-A08CDEE2CD8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D31522CB-E552-4F31-A1EC-EF985BA39908}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D31522CB-E552-4F31-A1EC-EF985BA39908}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D31522CB-E552-4F31-A1EC-EF985BA39908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3CDCD4B-A334-4D6D-ACBA-A08CDEE2CD8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3CDCD4B-A334-4D6D-ACBA-A08CDEE2CD8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3CDCD4B-A334-4D6D-ACBA-A08CDEE2CD8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3CDCD4B-A334-4D6D-ACBA-A08CDEE2CD8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

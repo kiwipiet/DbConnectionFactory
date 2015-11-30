@@ -2,17 +2,19 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
-using DbConnectionFactory.Core;
 
-namespace DbConnectionFactory.SqlServer
+namespace DbConnectionFactory
 {
-    public class DatabaseConnectionFactory : IDatabaseConnectionFactory
+    public sealed class DatabaseConnectionFactory : IDatabaseConnectionFactory
     {
         private readonly string _connectionString;
 
         public DatabaseConnectionFactory(string connectionString)
         {
-            if (connectionString == null) throw new ArgumentNullException(nameof(connectionString));
+            if (connectionString == null)
+            {
+                throw new ArgumentNullException(nameof(connectionString));
+            }
             _connectionString = connectionString;
         }
 

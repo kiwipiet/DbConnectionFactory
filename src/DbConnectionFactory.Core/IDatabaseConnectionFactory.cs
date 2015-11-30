@@ -1,4 +1,4 @@
-﻿namespace DbConnectionFactory.Core
+﻿namespace DbConnectionFactory
 {
     public interface IDatabaseConnectionFactory
     {
