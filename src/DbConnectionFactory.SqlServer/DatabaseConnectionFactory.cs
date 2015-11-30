@@ -9,7 +9,6 @@ namespace DbConnectionFactory.SqlServer
     public class DatabaseConnectionFactory : IDatabaseConnectionFactory
     {
         private readonly string _connectionString;
-        private readonly int? _commandTimeout;
 
         public DatabaseConnectionFactory(string connectionString)
         {
