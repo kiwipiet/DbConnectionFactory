@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConnectionFactory.Core", "DbConnectionFactory.Core\DbConnectionFactory.Core.csproj", "{640E8454-9CBA-40FE-823E-6ADDE44C6C3A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConnectionFactory.Core", "src\DbConnectionFactory.Core\DbConnectionFactory.Core.csproj", "{640E8454-9CBA-40FE-823E-6ADDE44C6C3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConnectionFactory.SqlServer", "DbConnectionFactory.SqlServer\DbConnectionFactory.SqlServer.csproj", "{D31522CB-E552-4F31-A1EC-EF985BA39908}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConnectionFactory.SqlServer", "src\DbConnectionFactory.SqlServer\DbConnectionFactory.SqlServer.csproj", "{D31522CB-E552-4F31-A1EC-EF985BA39908}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConnectionFactory.Dapper", "DbConnectionFactory.Dapper\DbConnectionFactory.Dapper.csproj", "{D3CDCD4B-A334-4D6D-ACBA-A08CDEE2CD8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConnectionFactory.Dapper", "src\DbConnectionFactory.Dapper\DbConnectionFactory.Dapper.csproj", "{D3CDCD4B-A334-4D6D-ACBA-A08CDEE2CD8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
