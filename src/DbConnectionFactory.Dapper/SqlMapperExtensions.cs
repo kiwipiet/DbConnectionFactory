@@ -19,6 +19,12 @@ namespace DbConnectionFactory
             return cnn.Connection.Execute(sql, param, transaction, commandTimeout, commandType);
         }
 
+        /// <summary>Execute a command asynchronously using .NET 4.5 Task.</summary>
+        public static Task<int> ExecuteAsync(this IDatabaseConnection cnn, string sql, object param = null, IDbTransaction transaction = null, int? commandTimeout = null, CommandType? commandType = null)
+        {
+            return cnn.Connection.ExecuteAsync(sql, param, transaction, commandTimeout, commandType);
+        }
+
         /// <summary>
         ///     Execute parameterized SQL that selects a single value
         /// </summary>

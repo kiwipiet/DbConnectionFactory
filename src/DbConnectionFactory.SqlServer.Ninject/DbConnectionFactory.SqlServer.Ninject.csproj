@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\Comsol\F2.Mobile\dependencies\DbConnectionFactory\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <HintPath>..\..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -49,11 +49,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Comsol\F2.Mobile\dependencies\DbConnectionFactory\src\DbConnectionFactory.Core\DbConnectionFactory.Core.csproj">
+    <ProjectReference Include="..\DbConnectionFactory.Core\DbConnectionFactory.Core.csproj">
       <Project>{640E8454-9CBA-40FE-823E-6ADDE44C6C3A}</Project>
       <Name>DbConnectionFactory.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Comsol\F2.Mobile\dependencies\DbConnectionFactory\src\DbConnectionFactory.SqlServer\DbConnectionFactory.SqlServer.csproj">
+    <ProjectReference Include="..\DbConnectionFactory.SqlServer\DbConnectionFactory.SqlServer.csproj">
       <Project>{d31522cb-e552-4f31-a1ec-ef985ba39908}</Project>
       <Name>DbConnectionFactory.SqlServer</Name>
     </ProjectReference>
