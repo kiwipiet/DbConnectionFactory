@@ -79,7 +79,7 @@ namespace DbConnectionFactory
         /// </summary>
         public static async Task<IMultiQueryResult> QueryMultipleAsync(this IDatabaseConnection cnn, string sql, object param = null, IDbTransaction transaction = null, int? commandTimeout = null, CommandType? commandType = null)
         {
-            var result = await cnn.Connection.QueryMultipleAsync(sql, param, transaction, commandTimeout, commandType);
+            var result = await cnn.Connection.QueryMultipleAsync(sql, param, transaction, commandTimeout, commandType).ConfigureAwait(false);
             return new MultiQueryResult(result);
         }
     }
