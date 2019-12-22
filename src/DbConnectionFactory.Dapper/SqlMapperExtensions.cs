@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
 using Dapper;
@@ -16,12 +17,14 @@ namespace DbConnectionFactory
         public static int Execute(this IDatabaseConnection cnn, string sql, object param = null, IDbTransaction transaction = null, int? commandTimeout = null,
             CommandType? commandType = null)
         {
+            if (cnn == null) throw new ArgumentNullException(nameof(cnn));
             return cnn.Connection.Execute(sql, param, transaction, commandTimeout, commandType);
         }
 
         /// <summary>Execute a command asynchronously using .NET 4.5 Task.</summary>
         public static Task<int> ExecuteAsync(this IDatabaseConnection cnn, string sql, object param = null, IDbTransaction transaction = null, int? commandTimeout = null, CommandType? commandType = null)
         {
+            if (cnn == null) throw new ArgumentNullException(nameof(cnn));
             return cnn.Connection.ExecuteAsync(sql, param, transaction, commandTimeout, commandType);
         }
 
@@ -34,6 +37,7 @@ namespace DbConnectionFactory
         public static T ExecuteScalar<T>(this IDatabaseConnection cnn, string sql, object param = null, IDbTransaction transaction = null, int? commandTimeout = null,
             CommandType? commandType = null)
         {
+            if (cnn == null) throw new ArgumentNullException(nameof(cnn));
             return cnn.Connection.ExecuteScalar<T>(sql, param, transaction, commandTimeout, commandType);
         }
 
@@ -52,6 +56,7 @@ namespace DbConnectionFactory
         public static IEnumerable<T> Query<T>(this IDatabaseConnection cnn, string sql, object param = null, IDbTransaction transaction = null, bool buffered = true,
             int? commandTimeout = null, CommandType? commandType = null)
         {
+            if (cnn == null) throw new ArgumentNullException(nameof(cnn));
             return cnn.Connection.Query<T>(sql, param, transaction, buffered, commandTimeout, commandType);
         }
 
@@ -61,6 +66,7 @@ namespace DbConnectionFactory
         public static Task<IEnumerable<T>> QueryAsync<T>(this IDatabaseConnection cnn, string sql, object param = null, IDbTransaction transaction = null,
             int? commandTimeout = null, CommandType? commandType = null)
         {
+            if (cnn == null) throw new ArgumentNullException(nameof(cnn));
             return cnn.Connection.QueryAsync<T>(sql, param, transaction, commandTimeout, commandType);
         }
 
@@ -70,6 +76,7 @@ namespace DbConnectionFactory
         public static IMultiQueryResult QueryMultiple(this IDatabaseConnection cnn, string sql, object param = null, IDbTransaction transaction = null, int? commandTimeout = null,
             CommandType? commandType = null)
         {
+            if (cnn == null) throw new ArgumentNullException(nameof(cnn));
             return new MultiQueryResult(cnn.Connection.QueryMultiple(sql, param, transaction, commandTimeout, commandType));
         }
 
@@ -79,6 +86,7 @@ namespace DbConnectionFactory
         /// </summary>
         public static async Task<IMultiQueryResult> QueryMultipleAsync(this IDatabaseConnection cnn, string sql, object param = null, IDbTransaction transaction = null, int? commandTimeout = null, CommandType? commandType = null)
         {
+            if (cnn == null) throw new ArgumentNullException(nameof(cnn));
             var result = await cnn.Connection.QueryMultipleAsync(sql, param, transaction, commandTimeout, commandType).ConfigureAwait(false);
             return new MultiQueryResult(result);
         }

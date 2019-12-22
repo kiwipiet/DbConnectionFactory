@@ -11,11 +11,7 @@ namespace DbConnectionFactory
 
         public DatabaseConnectionFactory(string connectionString)
         {
-            if (connectionString == null)
-            {
-                throw new ArgumentNullException(nameof(connectionString));
-            }
-            _connectionString = connectionString;
+            _connectionString = connectionString ?? throw new ArgumentNullException(nameof(connectionString));
         }
 
         public IDatabaseConnection Create()

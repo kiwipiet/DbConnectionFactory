@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConnectionFactory.Core", "src\DbConnectionFactory.Core\DbConnectionFactory.Core.csproj", "{640E8454-9CBA-40FE-823E-6ADDE44C6C3A}"
 EndProject
@@ -10,6 +10,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConnectionFactory.Dapper", "src\DbConnectionFactory.Dapper\DbConnectionFactory.Dapper.csproj", "{D3CDCD4B-A334-4D6D-ACBA-A08CDEE2CD8F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConnectionFactory.SqlServer.Ninject", "src\DbConnectionFactory.SqlServer.Ninject\DbConnectionFactory.SqlServer.Ninject.csproj", "{385B3730-652E-4A15-95FD-98E241A1F2E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{83159065-5123-4841-8F39-91B11858868B}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +44,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {819AC4BE-C641-4AA7-A743-84BCE3F1F54D}
 	EndGlobalSection
 EndGlobal
