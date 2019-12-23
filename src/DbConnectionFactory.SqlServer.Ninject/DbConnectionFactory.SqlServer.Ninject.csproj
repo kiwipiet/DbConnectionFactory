@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <RootNamespace>DbConnectionFactory.SqlServer</RootNamespace>
-    <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <AssemblyTitle>DbConnectionFactory.SqlServer.Ninject</AssemblyTitle>
     <Product>DbConnectionFactory.SqlServer.Ninject</Product>
     <Copyright>Copyright © Jansen Consulting Limited 2015-2016</Copyright>
