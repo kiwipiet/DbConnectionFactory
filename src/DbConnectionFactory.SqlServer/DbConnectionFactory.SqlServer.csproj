@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <RootNamespace>DbConnectionFactory</RootNamespace>
-    <TargetFramework>net452</TargetFramework>
+    <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
     <AssemblyTitle>DbConnectionFactory.SqlServer</AssemblyTitle>
     <Product>DbConnectionFactory.SqlServer</Product>
     <Copyright>Copyright © Jansen Consulting Limited 2015</Copyright>
@@ -17,10 +17,6 @@
     <ProjectReference Include="..\DbConnectionFactory.Core\DbConnectionFactory.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.3" />
-    <PackageReference Include="Microsoft.CodeAnalysis.VersionCheckAnalyzer" Version="2.9.3" />
-    <PackageReference Include="Microsoft.CodeQuality.Analyzers" Version="2.9.3" />
-    <PackageReference Include="Microsoft.NetCore.Analyzers" Version="2.9.3" />
-    <PackageReference Include="Microsoft.NetFramework.Analyzers" Version="2.9.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.7.0" />
   </ItemGroup>
 </Project>
