@@ -5,13 +5,10 @@
     <AssemblyTitle>DbConnectionFactory.SqlServer</AssemblyTitle>
     <Product>DbConnectionFactory.SqlServer</Product>
     <Copyright>Copyright © Jansen Consulting Limited 2015</Copyright>
-    <CodeAnalysisRuleSet />
     <OutputPath>bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
-    <RunCodeAnalysis>false</RunCodeAnalysis>
-    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
