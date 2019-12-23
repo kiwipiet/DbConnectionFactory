@@ -4,7 +4,7 @@
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <AssemblyTitle>DbConnectionFactory.SqlServer.Ninject</AssemblyTitle>
     <Product>DbConnectionFactory.SqlServer.Ninject</Product>
-    <Copyright>Copyright © Jansen Consulting Limited 2015-2016</Copyright>
+    <Copyright>Copyright © Jansen Consulting Limited 2015-2019</Copyright>
     <OutputPath>bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
