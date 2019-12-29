@@ -49,10 +49,7 @@ namespace DbConnectionFactory.SqlServer
             public NameValueCollection AppSettings
             {
                 [DebuggerStepThrough]
-                get
-                {
-                    return ConfigurationManager.AppSettings;
-                }
+                get => ConfigurationManager.AppSettings;
             }
 
             [DebuggerStepThrough]
@@ -72,6 +69,5 @@ namespace DbConnectionFactory.SqlServer
                 return ConfigurationManager.GetSection(sectionName) as T;
             }
         }
-
     }
 }
