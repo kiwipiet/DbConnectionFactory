@@ -17,6 +17,6 @@
     <ProjectReference Include="..\DbConnectionFactory.Core\DbConnectionFactory.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="System.Data.SqlClient" Version="4.7.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 </Project>
